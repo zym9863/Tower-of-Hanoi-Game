@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汉诺塔小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container">
+        <div class="tower" id="tower-a">
+            <div class="disk" id="disk-1" draggable="true">1</div>
+            <div class="disk" id="disk-2" draggable="true">2</div>
+            <div class="disk" id="disk-3" draggable="true">3</div>
+        </div>
+        <div class="tower" id="tower-b"></div>
+        <div class="tower" id="tower-c"></div>
+    </div>
+
+    <div class="controls">
+        <button id="undo-button">撤销</button>
+        <button id="reset-button">重置</button>
+        <p>步数：<span id="step-counter">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
